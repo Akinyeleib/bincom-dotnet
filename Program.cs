@@ -1,37 +1,51 @@
-﻿// Task 1
+﻿using System;
 
-string name = "John Doe";
+class Program
+{
+    static void Main(string [] args) {
+        // Task 1
 
-int age = 25;
+        string name = "John Doe";
 
-bool isAdmin = true;
+        int age = 25;
 
-Console.WriteLine(name);
-Console.WriteLine(age);
-Console.WriteLine(isAdmin);
+        bool isAdmin = true;
+
+        Console.WriteLine(name);
+        Console.WriteLine(age);
+        Console.WriteLine(isAdmin);
 
 
-// Task 2
+        // Task 2
 
-int num = 12;
-if (num % 2 == 0) {
-    Console.WriteLine("Even");
-} else {
-    Console.WriteLine("Odd");
+
+        Console.Write("Enter a number: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+        if (num % 2 == 0) {
+            Console.WriteLine("Even");
+        }
+        else {
+            Console.WriteLine("Odd");
+        }
+
+        // Task 3
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine(i);
+        }
+
+        // Task 4
+
+
+        // Task 5
+
+        Greet("Alice");
+
+    }
+
+    static void Greet(String name) {
+        Console.WriteLine("Hello, {0}!", name);
+    }
+
 }
 
-// Task 3
-for (int i = 1; i <= 10; i++) {
-    Console.WriteLine(i);
-}
-
-// Task 4
-
-
-// Task 5
-
-void Greet(String name) {
-    Console.WriteLine("Hello, {0}!", name);
-}
-
-Greet("Alice");
