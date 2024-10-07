@@ -35,7 +35,20 @@ class Program
         }
 
         // Task 4
+        int [] numbers = {2, 4, 6, 8, 10};
 
+        // 1. Sum
+        int sum = 0;
+        foreach (int i in numbers) {
+            sum += i;
+        }
+        Console.WriteLine("Sum is: {0}", sum);
+
+        // 2. Display
+        Console.WriteLine("Elements in the array: ");
+        foreach (int number in numbers) {
+            Console.WriteLine(number);
+        }
 
         // Task 5
 
