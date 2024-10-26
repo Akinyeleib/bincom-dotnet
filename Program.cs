@@ -2,7 +2,13 @@
 
 class Program
 {
-    static void Main(string [] args) {
+
+    static void Main(string[] args) {
+        Program p1 = new Program();
+        p1.tasks();
+    }
+    
+    void tasks() {
         // Task 1
 
         string name = "John Doe";
@@ -56,7 +62,7 @@ class Program
 
     }
 
-    static void Greet(String name) {
+    void Greet(String name) {
         Console.WriteLine("Hello, {0}!", name);
     }
 
